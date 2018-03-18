@@ -9,4 +9,9 @@ class Song
     @@songs << self
   end
 
+  def self.songs
+    @@songs
+  end
+  
+
 end
