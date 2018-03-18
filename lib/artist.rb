@@ -1,25 +1,25 @@
 class Artist
 
- attr_accessor :artist
+ attr_accessor :name
 
- def initialize(artist)
-   @artist = artist
+ def initialize(name)
+   @name = name
    @songs = []
  end
 
  def add_song(song)
-   @songs << song 
-   song.artist = self 
- end 
+   @songs << song
+   song.artist = self
+ end
 
- def genres 
+ def genres
    songs.collect do |song|
-     song.genre 
-   end 
+     song.genre
+   end
  end 
 
  def songs
    @songs
- end 
+ end
 
 end
