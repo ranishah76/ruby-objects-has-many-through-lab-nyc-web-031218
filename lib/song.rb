@@ -8,6 +8,4 @@ class Song
     genre.add_song(self)
   end
 
-  
-
 end
