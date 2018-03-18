@@ -8,7 +8,7 @@ def initialize(name)
 end
 
 def add_appointment(appointment)
-  @appointments << apointment
+  @appointments << appointment
   appointment.patient = self
 end
 
@@ -20,7 +20,7 @@ def doctors
   self.appointments.collect do |appointment|
     appointment.doctor
   end
-end 
+end
 
 
 end
