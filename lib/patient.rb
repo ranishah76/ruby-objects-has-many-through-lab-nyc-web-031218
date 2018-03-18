@@ -9,15 +9,18 @@ end
 
 def add_appointment(appointment)
   @appointments << apointment
-  appointment.patient = self 
-end 
+  appointment.patient = self
+end
 
-def appointments 
+def appointments
   @appointments
-end 
+end
 
-def doctors 
-  
+def doctors
+  self.appointments.collect do |appointment|
+    appointment.doctor
+  end
+end 
 
 
 end
